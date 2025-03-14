@@ -139,7 +139,8 @@ az role assignment create --assignee <PRINCIPAL_ID(FROM_PREVIOUS_COMMAND> --role
 ```
 ---
 ### 5. Environment Variables
-<img width="900" alt="image (8)" src="https://github.com/user-attachments/assets/4634764b-cea3-4a7b-a9b1-3cba1912a99d" />
+<img width="800" alt="image (11)" src="https://github.com/user-attachments/assets/9469b1ca-3196-4032-9913-936309fd6336" />
+
 
 - You can find the ACR_NAME, ACR_PASSWORD, ACR_USERNAME as follows 
 - <img width="500" alt="image" src="https://github.com/user-attachments/assets/cb279d60-2be4-4c7b-87cc-4ee714d05781" />
