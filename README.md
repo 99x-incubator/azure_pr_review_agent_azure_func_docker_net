@@ -155,6 +155,26 @@ az role assignment create --assignee <PRINCIPAL_ID(FROM_ABOVE_COMMAND)> --role "
 az role assignment create --assignee <PRINCIPAL_ID(FROM_PREVIOUS_COMMAND> --role AcrPull --scope /subscriptions/<SUB_ID>/resourceGroups/<RESOURCE_GROUP_NAME>/providers/Microsoft.ContainerRegistry/registries/<ACR_NAME>
 ```
 ---
+
+### 5. Create Azure OpenAI and Deploy a Model
+<table>
+  <tr>
+<td><img width="612" alt="image" src="https://github.com/user-attachments/assets/78bc5cf3-32ab-4884-91e2-5ab9f50be399" /></td>
+<td><img width="556" alt="image" src="https://github.com/user-attachments/assets/7ef3554e-f52c-40c6-b07c-392dde93a10c" /></td>
+    </tr>
+  <tr>
+<td><img width="731" alt="image" src="https://github.com/user-attachments/assets/eb8b3114-4ad5-40c9-88a6-34f51ce3f03f" /></td>
+<td><img width="960" alt="image" src="https://github.com/user-attachments/assets/ad57f5aa-d9e5-434f-802d-b916f1d42598" /></td>
+    </tr>
+  <tr>
+<td><img width="960" alt="image" src="https://github.com/user-attachments/assets/783a3822-fbc6-4aa1-94a9-53bbbb0cfae9" /></td>
+<td><img width="960" alt="image" src="https://github.com/user-attachments/assets/300a0051-dd5f-44d6-9ae2-4bcf91c16496" /></td>
+</tr>
+</table>
+
+
+
+
 ### 5. Environment Variables
 **Change AZURE_OPENAI_KEY to AZURE_OPENAI_API_KEY in environmental variables**
 <img width="800" alt="image (11)" src="https://github.com/user-attachments/assets/9469b1ca-3196-4032-9913-936309fd6336" />
@@ -170,8 +190,8 @@ az role assignment create --assignee <PRINCIPAL_ID(FROM_PREVIOUS_COMMAND> --role
     - Start by cloning the repository to your local machine:
 
 ```bash
-git clone https://github.com/Madushansuriyabandara/azure-pr-agent-function.git
-cd azure-pr-agent-function
+git clone https://github.com/99x-incubator/azure_pr_review_agent_azure_func_net.git
+cd azure_pr_review_agent_azure_func_net
 ```
 - #### Deploy via Visual Studio Code
   - Open the Project: Open the cloned repository in VS Code.
