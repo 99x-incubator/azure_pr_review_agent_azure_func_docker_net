@@ -46,7 +46,7 @@ Automatically runs a Docker container in Azure Container Instances (ACI) when tr
 ---
 ### 2. Prepare Azure Resources
 
-#### Create Azure Container Registry (ACR) (Better to use lowercase characters when naming the container registry)
+#### Create Azure Container Registry (ACR) (**Use lowercase characters when naming the container registry**)
 
 ##### **Using Azure Portal**
 - Azure Portal > Container Registries > Create
