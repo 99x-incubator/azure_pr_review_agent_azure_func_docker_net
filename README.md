@@ -177,7 +177,8 @@ az role assignment create --assignee <PRINCIPAL_ID(FROM_PREVIOUS_COMMAND> --role
 
 ### 5. Environment Variables
 **Change AZURE_OPENAI_KEY to AZURE_OPENAI_API_KEY in environmental variables**
-<img width="800" alt="image (11)" src="https://github.com/user-attachments/assets/9469b1ca-3196-4032-9913-936309fd6336" />
+- <img width="600" alt="image" src="https://github.com/user-attachments/assets/6fd6e632-73d7-46fb-9328-c87d8cf90266" />
+
 
 
 - You can find the ACR_NAME, ACR_PASSWORD, ACR_USERNAME as follows 
