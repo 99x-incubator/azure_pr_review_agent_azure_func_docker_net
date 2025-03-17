@@ -78,13 +78,17 @@ docker build -t azure-pr-agent .
 ```
 4. Login to azure
 ```bash
+az login
+```
+5. Login to the container registry
+```bash
 az acr login --name <ACR_NAME>
 ```
-5. Tag the built image
+6. Tag the built image
 ```bash
 docker tag azure-pr-agent <ACR_NAME>.azurecr.io/<IMAGE_NAME>:latest
 ```
-6. Push the image to the container registry
+7. Push the image to the container registry
 ```bash
 docker push <ACR_NAME>.azurecr.io/<IMAGE_NAME>:latest
 ```
