@@ -64,15 +64,27 @@ az acr create --resource-group <RESOURCE_GROUP_NAME> --name <ACR_NAME> --sku Bas
 ```
 
 #### Push Docker Image to ACR
+1. Clone this repository
 ```bash
-docker build -t <IMAGE_NAME> .
+git clone https://github.com/99x-incubator/azure_pr_review_agent
 ```
+2. Navigate to the folder
+``` bash
+cd azure_pr_review_agent
+```
+3. Open a command prompt and build the Docker Image
+```bash
+docker build -t azure-pr-agent .
+```
+4. Login to azure
 ```bash
 az acr login --name <ACR_NAME>
 ```
+5. Tag the built image
 ```bash
 docker tag azure-pr-agent <ACR_NAME>.azurecr.io/<IMAGE_NAME>:latest
 ```
+6. Push the image to the container registry
 ```bash
 docker push <ACR_NAME>.azurecr.io/<IMAGE_NAME>:latest
 ```
