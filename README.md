@@ -226,7 +226,9 @@ cd azure_pr_review_agent_azure_func_net
      - Using VSCode: ```ctrl```+```shift```+```P``` -> Azure Functions: Copy Function URL
      - Using CLI:
        ```bash
-       az functionapp function show --resource-group <RESOURCE_GROUP> --name <FUNCTION_APP_NAME> --function-name <FUNCTION_NAME> --query invokeUrlTemplate --output tsv
+       FOR /F "delims=" %a IN ('az functionapp function show --resource-group <RESOURCE_GROUP> --name <FUNCTION_APP> --function-name PRReviewTrigger --query invokeUrlTemplate -o tsv') DO SET "URL=%a"
+        FOR /F "delims=" %b IN ('az functionapp function keys list --resource-group <RESOURCE_GROUP> --name <FUNCTION_APP> --function-name PRReviewTrigger --query default -o tsv') DO SET "KEY=%b"
+        ECHO %URL%?code=%KEY%
        ```
 <table>
   <tr>
