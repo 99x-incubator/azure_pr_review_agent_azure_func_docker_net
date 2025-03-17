@@ -174,7 +174,9 @@ cd azure-pr-agent-function
     # Publish your function to the specified Function App
     func azure functionapp publish <FUNCTION_APP_NAME>
     ```
-
+- After deployment, the functions should appear in the function app as follows in the portal
+- <img width="953" alt="image (12)" src="https://github.com/user-attachments/assets/0bf96886-619a-4a93-b9f6-ee617955779b" />
+**Note that the container cleanup function runs every 6 hours to remove container instances that are on the terminated, failed or successful state**
 
 ### 7. Configure Azure DevOps Webhook
 
