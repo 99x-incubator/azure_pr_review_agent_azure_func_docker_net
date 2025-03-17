@@ -144,6 +144,7 @@ az role assignment create --assignee <PRINCIPAL_ID(FROM_ABOVE_COMMAND)> --role "
 <table>
   <tr><td><img width="800" alt="image (6)" src="https://github.com/user-attachments/assets/acfb362c-a7fd-4180-a569-bd1226650b7a" /></td></tr>
   <tr><td><img width="800" alt="image (7)" src="https://github.com/user-attachments/assets/f4d2696d-ff1d-4d4b-97e1-d0054d83003c" /></td></tr>
+  <tr><td><img width="800" alt="image (13)" src="https://github.com/user-attachments/assets/9a33d020-98ae-41c4-8e5a-9b5a7f36b2f1" /></td></tr>
 </table>
 
 
