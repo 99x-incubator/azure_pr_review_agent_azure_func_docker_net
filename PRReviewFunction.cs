@@ -46,6 +46,14 @@ namespace PRReviewAgent
                 var repoName = repository.Name ?? string.Empty;
                 var repoUrl = repository.RemoteUrl ?? string.Empty;
 
+                 // Add AI-suggested PR skip logic
+                if (prTitle.StartsWith("AI:", StringComparison.OrdinalIgnoreCase) || 
+                    prTitle.Contains("[AI Suggested Fixes]", StringComparison.OrdinalIgnoreCase))
+                {
+                    _logger.LogInformation($"Skipping AI-generated PR: {prTitle}");
+                    return new OkObjectResult("Skipped AI-generated PR");
+                }
+
                 _logger.LogInformation($"Processing PR #{prId}: {prTitle}");
                 _logger.LogInformation($"Repository: {repoName} ({repoUrl})");
 
