@@ -86,11 +86,11 @@ az acr login --name <ACR_NAME>
 ```
 6. Tag the built image
 ```bash
-docker tag azure-pr-agent <ACR_NAME>.azurecr.io/<IMAGE_NAME>:latest
+docker tag azure-pr-agent <ACR_NAME>.azurecr.io/azure-pr-agent:latest
 ```
 7. Push the image to the container registry
 ```bash
-docker push <ACR_NAME>.azurecr.io/<IMAGE_NAME>:latest
+docker push <ACR_NAME>.azurecr.io/azure-pr-agent:latest
 ```
 ---
 ### 3. Configure Function App
