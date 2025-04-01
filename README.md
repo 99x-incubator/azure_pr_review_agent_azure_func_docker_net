@@ -176,7 +176,7 @@ az role assignment create --assignee <PRINCIPAL_ID(FROM_PREVIOUS_COMMAND> --role
 
 
 
-### 5. Environment Variables
+### 5. Environment Variables (Inside the function app)
 **Change AZURE_OPENAI_KEY to AZURE_OPENAI_API_KEY in environmental variables**
 - <img width="600" alt="image" src="https://github.com/user-attachments/assets/6fd6e632-73d7-46fb-9328-c87d8cf90266" />
 
