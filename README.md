@@ -123,6 +123,7 @@ az functionapp create --resource-group <RESOURCE_GROUP_NAME> --consumption-plan-
 #### Enable Managed Identity
 
 ##### **Using Azure Portal**
+- Go to the function app
 <table>
   <tr><td><img src="https://github.com/user-attachments/assets/4f56e89f-6d12-4d31-875a-0a4871c4516d" alt="image" width="800"></td></tr>
   <tr><td><img src="https://github.com/user-attachments/assets/615b61bc-94d5-4c0e-87dd-417fe7632073" alt="image" width="800"></td></tr>
