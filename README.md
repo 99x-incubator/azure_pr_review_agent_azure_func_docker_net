@@ -98,7 +98,7 @@ docker push <ACR_NAME>.azurecr.io/azure-pr-agent:latest
 #### Create Function App
 
 ##### **Using Azure Portal**
-- Use python runtime environment
+- Use .NET runtime stack
 <table>
   <tr>
     <td><img width="600" alt="image" src="https://github.com/user-attachments/assets/02a60481-ac49-462a-af69-5462276eceb1" /></td>
