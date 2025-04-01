@@ -225,7 +225,7 @@ cd azure_pr_review_agent_azure_func_net
    - **Trigger**: Pull request created
    - **URL**: 
      - Using VSCode: ```ctrl```+```shift```+```P``` -> Azure Functions: Copy Function URL
-     - Using CLI:
+     - Using CLI: Replace "==" in the end of the URL with "%3D%3D" after copying it before pasting in the webhook
        ```bash
        FOR /F "delims=" %a IN ('az functionapp function show --resource-group <RESOURCE_GROUP> --name <FUNCTION_APP> --function-name PRReviewTrigger --query invokeUrlTemplate -o tsv') DO SET "URL=%a"
         FOR /F "delims=" %b IN ('az functionapp function keys list --resource-group <RESOURCE_GROUP> --name <FUNCTION_APP> --function-name PRReviewTrigger --query default -o tsv') DO SET "KEY=%b"
